@@ -7,7 +7,7 @@ define cube <cube_name> [<dimension_list>]:<measure_list>
 ## Dimension Definition
 
 ```dmql
-define dimension <dimension_name> as [<attribute_or_subdomain_list>]
+define dimension <dimension_name> as [<attribute_or_sub_dimension_list>]
 ```
 
 ## Special case
@@ -35,6 +35,12 @@ define dimension time as [time_key, day, day_of_the_week, month, quarter, year]
 
 ```dmql
 define dimension branch as [branch_key, branch_name, branch_type]
+```
+
+**Note: Incase of snowflake i.e having sub dimensions**
+
+```dmql
+define dimension branch as [branch_key, branch_name, branch_type, supplier(supplier_key, supplier_type)]
 ```
 
 ### Branch Dimension
