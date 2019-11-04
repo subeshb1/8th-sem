@@ -27,6 +27,7 @@ support = 0.005
 If an item set happens to have a very low support, we do not have enough information in the relations between it's items & hence no conclusions can be drawn.
 
 ## 2. Confidence
+
 This means defines the likeliness of occurrence of consequent on the cart/set given that the cart already has the antecedents.
 Mathematically,
 
@@ -35,3 +36,5 @@ confidence ({X} -> {Y}) = (Transactions containing both X & Y) / Transactions co
 ```
 
 For eg: If we consider, transactions containing both X & Y is 50 and the transaction containing X is 300 then, confidence is 0.166.
+
+For associations rules whose confidence is very high can be considered for further analysis.
