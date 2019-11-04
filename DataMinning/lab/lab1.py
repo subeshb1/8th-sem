@@ -7,7 +7,7 @@ def _sum(arr):
 
 int_array = [1,2,3,4,5]
 
-print(sum(int_array))
+print(_sum(int_array))
 
 # Find common in array
 
