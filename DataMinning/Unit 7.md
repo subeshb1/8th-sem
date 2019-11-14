@@ -159,3 +159,5 @@ minimum support = 0.5
 minimum confidence = 0.7
 minimum lift = 1
 ```
+
+## Bottleneck of Frequent database scans are costly
